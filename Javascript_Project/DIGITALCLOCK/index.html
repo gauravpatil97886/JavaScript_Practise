@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Clock Design</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .watch-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom right, #4f46e5, #713ce5);
+        }
+
+        .clock-wrapper {
+            position: relative;
+            font-family: 'Digital-7', sans-serif;
+            font-size: 9rem;
+            font-weight: bold;
+            display: grid;
+            grid-template-columns: auto auto;
+            text-align: right;
+            color: #fff;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+            border: 30px solid #FFD700;
+            border-radius: 20px;
+            gap: 1px;
+        }
+
+        .clock-wrapper > div {
+            position: relative;
+            padding: 0.8rem 0.5rem;
+        }
+
+        .clock-wrapper > div:nth-child(odd) {
+            background: linear-gradient(to bottom right, #2c2c2c, #3c3c3c);
+        }
+
+        .clock-wrapper > div:nth-child(even) {
+            background: linear-gradient(to bottom right, #444, #333);
+        }
+
+        
+        .copyright {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8em;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <h1>DIGITAL CLOCK for Dom practise</h1>
+    <div class="watch-container">
+        <div class="clock-wrapper">
+            <div>
+                <div class="line"></div>
+                <div id="left-timer">00</div>
+            </div>
+            <div>
+                <div class="line"></div>
+                <div id="right-timer">00</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">© 2023 Gaurav</div>
+    <script src="digital.js"></script>
+</body>
+</html>

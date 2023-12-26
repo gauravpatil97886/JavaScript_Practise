@@ -1,0 +1,114 @@
+/* guess.css */
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Wrapper styling */
+#wrapper {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #39ff14;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Form styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guessfield {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #39ff14;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2em;
+    outline: none;
+}
+
+.guessfield::placeholder {
+    color: #666;
+}
+
+.guessSubmit {
+    padding: 10px 30px;
+    background: linear-gradient(to right, #39ff14, #0cffda);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.guessSubmit:hover {
+    background: linear-gradient(to right, #0cffda, #39ff14);
+}
+
+.resultParas {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+
+.resultParas p {
+    margin-bottom: 10px;
+}
+
+.guesses {
+    font-weight: bold;
+    color: #39ff14;
+}
+
+.lastResult {
+    font-weight: bold;
+    color: #0cffda;
+}
+
+/* Footer styling */
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.introText {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+/* Label for guess input */
+label[for="guessfield"] {
+    display: block;
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
